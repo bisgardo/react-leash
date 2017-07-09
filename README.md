@@ -30,7 +30,8 @@ Other project that (at a quick glance) appears to solve the same problem:
 
 ## Examples
 
-The "child" component is transformed to stay within the viewport for as long as the 
+The "child" component gets transformed to stay within the viewport,
+only limited by the boundaries of the "parent" component.
 
 * Wrapper component: `OffsetIntoViewport`:
 
@@ -78,6 +79,6 @@ See [jQuery.floatThead](https://mkoryak.github.io/floatThead/) for an alternativ
 ### Future ideas
 
 * Implement solution where offsets are computed relative to a stationary 0x0 div
-  (might reduce the slight "jumpiness" that happens especially in IE).
+  (might reduce the slight "jumpiness" that happens in IE in particular).
 * Implement alternative solution that uses fixed positioning.
 * Implement usage of `position: sticky` if the browser supports it.
